@@ -12,4 +12,5 @@ public class Movie {
     private int id;
     private String movieName;
     private String genre;
+
 }

@@ -35,4 +35,16 @@ public class AfishaManager {
         return film;
 
     }
+
+    public Movie[] getAll() {
+        Movie[] result = new Movie[movies.length];
+        // c - current film
+        for (int c = 0; c < result.length; c++) {
+            int index = movies.length - c - 1;
+            result[c] = movies[index];
+        }
+        return result;
+    }
+
+
 }
