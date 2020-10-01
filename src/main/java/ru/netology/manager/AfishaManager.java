@@ -1,4 +1,4 @@
-package ru.netology.manager.manager;
+package ru.netology.manager;
 
 import ru.netology.manager.domain.Movie;
 
@@ -6,6 +6,7 @@ public class AfishaManager {
 
     private Movie[] movies = new Movie[0];
     int afishaLength = 9;
+
     public AfishaManager(int afishaLength) {
         this.afishaLength = afishaLength;
     }

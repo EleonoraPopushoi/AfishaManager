@@ -3,9 +3,8 @@ package ru.netology.manager.manager;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import ru.netology.manager.manager.AfishaManager;
+import ru.netology.manager.AfishaManager;
 import ru.netology.manager.domain.Movie;
-
 
 
 class AfishaManagerTest {
@@ -58,7 +57,7 @@ class AfishaManagerTest {
     public void showAfishaLessDefaultLength() {
         manager1.addMovie(item8);
         Movie[] actual = manager1.getLastMovieAdded();
-        Movie[] expected = new Movie[] {item8};
+        Movie[] expected = new Movie[]{item8};
         Assertions.assertArrayEquals(actual, expected);
     }
 
@@ -66,7 +65,7 @@ class AfishaManagerTest {
     public void showAfishaWithDefaultLength() {
         manager1.addMovie(item10);
         Movie[] actual = manager1.getLastMovieAdded();
-        Movie[] expected = new Movie[] {
+        Movie[] expected = new Movie[]{
                 item10
         };
         Assertions.assertArrayEquals(actual, expected);

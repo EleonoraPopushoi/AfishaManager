@@ -1,4 +1,4 @@
-package ru.netology.manager.manager;
+package ru.netology.manager.repository;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -6,7 +6,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import ru.netology.manager.domain.Movie;
-import ru.netology.manager.repository.AfishaRepository;
+import ru.netology.manager.AfishaManager;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.mockito.Mockito.doNothing;
