@@ -45,18 +45,7 @@ class AfishaRepositoryTest {
     @Test
     void shouldFindAll() {
         Movie[] actual = repository.findAll();
-        Movie[] expected = {
-                item1,
-                item2,
-                item3,
-                item4,
-                item5,
-                item6,
-                item7,
-                item8,
-                item9,
-                item10,
-        };
+        Movie[] expected = {item1, item2, item3, item4, item5, item6, item7, item8, item9, item10,};
         assertArrayEquals(expected, actual);
     }
 
@@ -64,20 +53,7 @@ class AfishaRepositoryTest {
     void shouldSave() {
         repository.save(itemToSave);
         Movie[] actual = repository.findAll();
-        Movie[] expected = {
-                item1,
-                item2,
-                item3,
-                item4,
-                item5,
-                item6,
-                item7,
-                item8,
-                item9,
-                item10,
-                itemToSave,
-
-        };
+        Movie[] expected = {item1, item2, item3, item4, item5, item6, item7, item8, item9, item10, itemToSave,};
         assertArrayEquals(expected, actual);
     }
 
@@ -92,17 +68,7 @@ class AfishaRepositoryTest {
     void shouldRemoveById() {
         repository.removeById(1);
         Movie[] actual = repository.findAll();
-        Movie[] expected = {
-                item2,
-                item3,
-                item4,
-                item5,
-                item6,
-                item7,
-                item8,
-                item9,
-                item10
-        };
+        Movie[] expected = {item2, item3, item4, item5, item6, item7, item8, item9, item10};
         assertArrayEquals(expected, actual);
     }
 
