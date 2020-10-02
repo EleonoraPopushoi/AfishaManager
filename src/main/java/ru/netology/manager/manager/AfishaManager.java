@@ -3,9 +3,10 @@ package ru.netology.manager.manager;
 import ru.netology.manager.domain.Movie;
 
 public class AfishaManager {
-
+    int afishaLength = 10;
     private Movie[] movies = new Movie[0];
-    int afishaLength = 9;
+
+
     public AfishaManager(int afishaLength) {
         this.afishaLength = afishaLength;
     }
@@ -15,9 +16,9 @@ public class AfishaManager {
     }
 
     public void addMovie(Movie movie) {
-        int moviesLength = movies.length;
-        Movie[] tmpArray = new Movie[moviesLength + 1];
-        System.arraycopy(movies, 0, tmpArray, 0, moviesLength);
+        int movieLength = movies.length;
+        Movie[] tmpArray = new Movie[movieLength + 1];
+        System.arraycopy(movies, 0, tmpArray, 0, movieLength);
         int lastIndex = tmpArray.length - 1;
         tmpArray[lastIndex] = movie;
         movies = tmpArray;
